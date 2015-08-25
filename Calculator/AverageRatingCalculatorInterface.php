@@ -11,7 +11,7 @@
 
 namespace Sylius\Component\Review\Calculator;
 
-use Sylius\Component\Review\Model\Reviewable;
+use Sylius\Component\Review\Model\ReviewableInterface;
 
 /**
  * @author Mateusz Zalewski <mateusz.zalewski@lakion.com>
@@ -19,9 +19,9 @@ use Sylius\Component\Review\Model\Reviewable;
 interface AverageRatingCalculatorInterface
 {
     /**
-     * @param Reviewable $reviewable
+     * @param ReviewableInterface $reviewable
      *
      * @return float
      */
-    public function calculate(Reviewable $reviewable);
+    public function calculate(ReviewableInterface $reviewable);
 }
